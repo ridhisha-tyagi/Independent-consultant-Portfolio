@@ -1,0 +1,41 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+body {
+  margin: 0;
+  background: #EDEDED;
+  color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Headings (sharp font) */
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 0;
+  background: #EDEDED;
+}
+
+.card {
+  width: 90%;
+  max-width: 1200px;
+  transition: all 0.6s ease;
+  transform: scale(0.92);
+  opacity: 0.6;
+}
+
+.card.active {
+  transform: scale(1);
+  opacity: 1;
+}
